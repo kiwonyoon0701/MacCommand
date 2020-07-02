@@ -12,6 +12,7 @@ sudo plutil -convert xml1 ScreenCapture.strings
 
 Locate the following lines:
 
+```
 <key>%@ %@ at %@</key>  
 <string>%@ %@ at %@</string>  
 
@@ -19,6 +20,7 @@ and replace with the following lines:
 
 <key>%@ %@ at %@</key>  
 <string>%@_%@_%@</string>  
+```
 
 6. Convert back to binary:
 sudo plutil -convert binary1 ScreenCapture.strings
